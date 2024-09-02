@@ -8,11 +8,10 @@ export function makeServer() {
             this.get('/form', () => ({
                 pages: [
                     {
-                        title: 'Personal Information',
+                        title: 'Interest Submission Form',
                         fields: [
                             { name: 'fullName', label: 'Full Name', type: 'text', required: true },
                             { name: 'gender', label: 'Gender', type: 'select', options: ['Male', 'Female', 'Non-binary'], required: true },
-                            { name: 'age', label: 'Age', type: 'number', required: true, min: 18, max: 100 },
                         ],
                     },
                     {
